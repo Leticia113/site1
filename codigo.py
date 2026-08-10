@@ -31,13 +31,13 @@ st.image(
 str(CAMINHO_LOGO),
 use_container_width=True
 )
-else: st.warning( " A imagem mat.jpeg não foi encontrada." ⚠️ )
+else: st.warning( " A imagem mat.jpeg não foi encontrada. ⚠️" )
 
 ============================================
 TÍTULO
 
 ============================================
-st.title(" Equação do 1o Grau") 📈
+st.title(" Equação do 1o Grau  📈") 
 st.write("Equação no formato:")
 st.latex(r"ax + b = 0")
 
@@ -75,7 +75,7 @@ x_raiz = -b / a
 # ====================================
 # RESULTADO
 # ====================================
-st.subheader(" Resultado") ✅
+st.subheader(" Resultado ✅") 
 st.write(
 "A raiz da equação é:"
 )
@@ -119,7 +119,7 @@ f"x = {x_raiz:.2f}"
 # GRÁFICO
 # ====================================
 st.subheader(
-" Gráfico da função" 📊
+" Gráfico da função 📊"
 
 )
 # Cria intervalo para o gráfico
@@ -181,4 +181,4 @@ RODAPÉ
 
 ============================================
 st.divider()
-st.caption( " Calculadora de Equação do 1o Grau" 📚 )
+st.caption( " Calculadora de Equação do 1o Grau 📚" )
