@@ -3,30 +3,12 @@ import streamlit as st
 import numpy as np 
 import matplotlib.pyplot as plt 
 
-============================================
-CONFIGURAÇÃO DA PÁGINA
-============================================
 st.set_page_config( page_title="Equação do 1o Grau", page_icon="📈", layout="centered" )
 
-============================================
-
-CAMINHO DA PASTA DO PROGRAMA
-
-============================================
 PASTA_APP = Path(file).parent
 
-============================================
-
-CAMINHO DA LOGOMARCA
-
-============================================
 CAMINHO_LOGO = PASTA_APP / "mat.jpeg"
 
-============================================
-
-LOGOMARCA
-
-============================================
 if CAMINHO_LOGO.exists():
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
@@ -36,26 +18,13 @@ use_container_width=True
 )
 else: st.warning( " A imagem mat.jpeg não foi encontrada. ⚠️" )
 
-============================================
-TÍTULO
-
-============================================
 st.title(" Equação do 1o Grau  📈") 
 st.write("Equação no formato:")
 st.latex(r"ax + b = 0")
 
-============================================
-
-ENTRADA DOS VALORES
-
-============================================
 a = st.number_input( "Digite o valor de a", value=1, step=1 )
 b = st.number_input( "Digite o valor de b", value=0, step=1 )
 
-============================================
-BOTÃO CALCULAR
-
-============================================
 if st.button( "Calcular", use_container_width=True ):
 # ========================================
 # VERIFICA O VALOR DE A
