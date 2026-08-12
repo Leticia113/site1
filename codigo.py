@@ -1,4 +1,7 @@
-import streamlit as st import numpy as np import matplotlib.pyplot as plt from pathlib import Path
+from pathlib import Path
+import streamlit as st 
+import numpy as np 
+import matplotlib.pyplot as plt 
 
 ============================================
 CONFIGURAÇÃO DA PÁGINA
