@@ -10,11 +10,11 @@ PASTA_APP = Path(file).parent
 CAMINHO_LOGO = PASTA_APP / "mat.jpeg"
 
 if CAMINHO_LOGO.exists():
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-st.image(
-str(CAMINHO_LOGO),
-use_container_width=True
+  col1, col2, col3 = st.columns([1, 2, 1])
+  with col2:
+    st.image(
+  str(CAMINHO_LOGO),
+  use_container_width=True
 )
 else: st.warning( " A imagem mat.jpeg não foi encontrada. ⚠️" )
 
