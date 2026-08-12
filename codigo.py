@@ -3,7 +3,7 @@ import streamlit as st import numpy as np import matplotlib.pyplot as plt from p
 ============================================
 CONFIGURAÇÃO DA PÁGINA
 ============================================
-st.set_page_config( page_title="Equação do 1o Grau", page_icon=" ", 📈 layout="centered" )
+st.set_page_config( page_title="Equação do 1o Grau", page_icon="📈", layout="centered" )
 
 ============================================
 
