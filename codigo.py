@@ -31,74 +31,74 @@ if st.button( "Calcular", use_container_width=True ):
 # ========================================
 if a == 0:
 if b == 0:
-st.warning(
-"A equação possui infinitas soluções."
+  st.warning(
+  "A equação possui infinitas soluções."
 )
 else:
-st.error(
-"A equação não possui solução."
+  st.error(
+  "A equação não possui solução."
 )
 else:
 # ====================================
 # CALCULA A RAIZ
 # ====================================
 
-x_raiz = -b / a
+  x_raiz = -b / a
 # ====================================
 # RESULTADO
 # ====================================
-st.subheader(" Resultado ✅") 
-st.write(
-"A raiz da equação é:"
+  st.subheader(" Resultado ✅") 
+  st.write(
+  "A raiz da equação é:"
 )
-st.success(
-f"x = {x_raiz:.2f}"
+  st.success(
+  f"x = {x_raiz:.2f}"
 )
 # ====================================
 # MOSTRA A EQUAÇÃO
 # ====================================
-st.subheader("Equação")
+  st.subheader("Equação")
 if b >= 0:
-st.latex(
-f"{a}x + {b} = 0"
+  st.latex(
+  f"{a}x + {b} = 0"
 )
 else:
-st.latex(
-f"{a}x - {abs(b)} = 0"
+  st.latex(
+  f"{a}x - {abs(b)} = 0"
 )
 # ====================================
 # MOSTRA O CÁLCULO
 # ====================================
-st.subheader("Resolução")
+  st.subheader("Resolução")
 if b >= 0:
-st.latex(
-f"{a}x + {b} = 0"
+  st.latex(
+  f"{a}x + {b} = 0"
 )
 else:
-st.latex(
-f"{a}x - {abs(b)} = 0"
+  st.latex(
+  f"{a}x - {abs(b)} = 0"
 )
-st.latex(
-f"{a}x = {-b}"
+  st.latex(
+  f"{a}x = {-b}"
 )
-st.latex(
-f"x = \\frac{{{-b}}}{{{a}}}"
+  st.latex(
+  f"x = \\frac{{{-b}}}{{{a}}}"
 )
-st.latex(
-f"x = {x_raiz:.2f}"
+  st.latex(
+  f"x = {x_raiz:.2f}"
 )
 # ====================================
 # GRÁFICO
 # ====================================
-st.subheader(
-" Gráfico da função 📊"
+  st.subheader(
+  " Gráfico da função 📊"
 
 )
 # Cria intervalo para o gráfico
-x = np.linspace(
-x_raiz - 10,
-x_raiz + 10,
-500
+  x = np.linspace(
+  x_raiz - 10,
+  x_raiz + 10,
+  500
 )
 # Função do primeiro grau
 y = a * x + b
