@@ -6,6 +6,56 @@ import streamlit as st
 st.set_page_config(
     page_title="Equação do 1º Grau", page_icon="📈", layout="centered")
 
+st.markdown("""
+<style>
+    /* Fundo principal */
+    .stApp {
+        background-color: #ffd6e7;
+    }
+
+    /* Área principal */
+    .main {
+        background-color: #ffd6e7;
+    }
+
+    /* Título */
+    h1 {
+        color: #c2185b;
+        text-align: center;
+    }
+
+    /* Subtítulos */
+    h2, h3 {
+        color: #ad1457;
+    }
+
+    /* Texto */
+    p, label {
+        color: #4a1630;
+    }
+
+    /* Botão */
+    .stButton > button {
+        background-color: #e91e63;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .stButton > button:hover {
+        background-color: #c2185b;
+        color: white;
+    }
+
+    /* Caixa de resultado */
+    .stAlert {
+        border-radius: 10px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 if "calculado" not in st.session_state:
   st.session_state.calculado = False
 
