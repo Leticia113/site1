@@ -102,37 +102,37 @@ if st.session_state.calculado:
     if b >= 0:
       st.latex(f"{a}x + {b} = 0")
     else:
-      st.latex(f"{a}x - {abs(b)} = 0")
-    st.latex(f"{a}x = {-b}")
-    st.latex(f"x = \\frac{{{-b}}}{{{a}}}")
-    st.latex(f"x = {x_raiz:.2f}")
+        st.latex(f"{a}x - {abs(b)} = 0")
+        st.latex(f"{a}x = {-b}")
+        st.latex(f"x = \\frac{{{-b}}}{{{a}}}")
+        st.latex(f"x = {x_raiz:.2f}")
 
-st.subheader("📊 Gráfico da função") 
+    st.subheader("📊 Gráfico da função") 
 
-x = np.linspace(
+    x = np.linspace(
     x_raiz - 10, 
     x_raiz + 10, 
     500) 
 
-y = a * x + b 
+    y = a * x + b 
 
-fig, ax = plt.subplots(figsize=(8, 5)) 
+    fig, ax = plt.subplots(figsize=(8, 5)) 
 
-ax.plot(x, y, linewidth=2, label=f"y = {a}x + {b}") 
+    ax.plot(x, y, linewidth=2, label=f"y = {a}x + {b}") 
 
-ax.axhline(y=0, color='black', linewidth=1) 
-ax.axvline(x=0, color='black', linewidth=1) 
+    ax.axhline(y=0, color='black', linewidth=1) 
+    ax.axvline(x=0, color='black', linewidth=1) 
 
-ax.scatter([x_raiz], [0], color='red', s=100, zorder=5, label=f"Raiz x = {x_raiz:.2f}") 
+    ax.scatter([x_raiz], [0], color='red', s=100, zorder=5, label=f"Raiz x = {x_raiz:.2f}") 
 
-ax.set_xlabel("Eixo X")  # Corrigido para string
-ax.set_ylabel("Eixo Y")  # Corrigido para string
-ax.set_title("Gráfico da Função do 1º Grau") 
-ax.grid(True) 
-ax.legend() 
+    ax.set_xlabel("Eixo X")  # Corrigido para string
+    ax.set_ylabel("Eixo Y")  # Corrigido para string
+    ax.set_title("Gráfico da Função do 1º Grau") 
+    ax.grid(True) 
+    ax.legend() 
 
-st.pyplot(fig) 
-plt.close(fig) 
+    st.pyplot(fig) 
+    plt.close(fig) 
 
 st.divider() 
 st.caption("📚 Calculadora de Equação do 1º Grau")
